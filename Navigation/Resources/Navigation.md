@@ -106,6 +106,17 @@ print('States have length:', state_size)
     States have length: 37
 
 
+### Building the Network Architecture
+Importing the Deep Q-Network Agent and building the architecture based on specific hyperparameters
+
+- 3 hidden layers:
+    - (Number of States=37, 512)
+    - (512, 256)
+    - (256, 128)
+    - (128, Number of Actions=4)
+- A batch size of 32
+- A learning rate of 0.0005
+
 
 ```python
 # Watch changes and reload automatically
@@ -134,6 +145,11 @@ agent = DQN_Agent(state_size=state_size,
 
     cuda:0
 
+
+### Training the Model
+Training the agent based on the following hyperparameters:
+- $\epsilon$ decay rate of 0.95
+    - Tested multiple values (0.995, 0.999, 0.99, 0.95). Iterating through these values improved the training speed the most.
 
 
 ```python
@@ -173,8 +189,11 @@ plot_scores(scores, order=3)
 ```
 
 
-![png](output_12_0.png)
+![png](output_14_0.png)
 
+
+### Loading a Pre-Trained Model for Demonstration
+Loading a pre-trained model and displaying its performance in the virtual environment until a specific score is reached in order to visualize multiple behaviors.
 
 
 ```python

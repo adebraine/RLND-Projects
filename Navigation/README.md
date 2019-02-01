@@ -22,14 +22,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 ### Getting Started
 
-1. Clone the repository, and navigate to the `Navigation/` folder.  Then, install several dependencies.
-```bash
-git clone TODOTODOTODOTODOTODOT
-cd Navigation
-pip install -r requirements.txt
-```
-
-2. Create (and activate) a new environment with Python 3.6.
+1. Create (and activate) a new environment with Python 3.6.
 
 	- __Linux__ or __Mac__: 
 	```bash
@@ -41,6 +34,13 @@ pip install -r requirements.txt
 	conda create --name drlnd python=3.6 
 	activate drlnd
 	```
+
+2. Clone the repository, and navigate to the `Navigation/` folder.  Then, install several dependencies.
+```bash
+git clone https://github.com/adebraine/RLND-Projects.git
+cd RLND-Projects/Navigation
+pip install -r requirements.txt
+```
 
 3. Create an [IPython kernel](http://ipython.readthedocs.io/en/stable/install/kernel_install.html) for the `drlnd` environment.  
 ```bash
@@ -59,6 +59,10 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
     
 6. Place the file in the `Navigation/` folder, and unzip (or decompress) the file. 
 	
+7. Start `Jupyter` and make sure that you are using the correct Kernel `drlnd`.
+```
+jupyter notebook
+```
 
 ### Instructions
 
