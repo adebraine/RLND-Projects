@@ -38,7 +38,7 @@ The task is episodic, and in order to solve the environment, your agent must get
 2. Clone the repository, and navigate to the `Navigation/` folder.  Then, install several dependencies.
 ```bash
 git clone https://github.com/adebraine/RLND-Projects.git
-cd RLND-Projects/Navigation
+cd RLND-Projects
 pip install -r requirements.txt
 ```
 
